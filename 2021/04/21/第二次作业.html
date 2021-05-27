@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>第二次作业</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <nav>
+    
+      <a href="/" >Home</a>
+    
+      <a href="/about.html" >About</a>
+    
+      <a href="/blog.html" >Blog</a>
+    
+      <a href="/staff.html" >Staff</a>
+    
+  </nav>
+    <h1>第二次作业</h1>
+
+<p>
+  21 Apr 2021
+  
+  
+    - <a href="/authors/Peihong.html">Yao Peihong</a>
+  
+</p>
+
+<h1 id="web应用软件开发实训-第二次作业-开发一个静态网站">WEB应用软件开发实训-第二次作业-开发一个静态网站</h1>
+
+<p>公网地址：<a href="https://yaopeihong0826.github.io">https://yaopeihong0826.github.io</a></p>
+
+<p>github仓库网址：<a href="https://github.com/yaopeihong0826/yaopeihong0826.github.io">https://github.com/yaopeihong0826/yaopeihong0826.github.io</a></p>
+
+<h2 id="一网站目录结构">一、网站目录结构</h2>
+<p><img src="/assets/images/网站目录.jpg" alt="" /></p>
+<h2 id="二网站截图">二、网站截图</h2>
+<ul>
+  <li>首页</li>
+</ul>
+
+<p><img src="/assets/images/首页.jpg" alt="" /></p>
+
+<ul>
+  <li>Blog列表页</li>
+</ul>
+
+<p><img src="/assets/images/Blog.jpg" alt="" /></p>
+
+<ul>
+  <li>两篇Post</li>
+</ul>
+
+<p>第一篇</p>
+
+<p><img src="/assets/images/Post1.jpg" alt="" /></p>
+
+<p>第二篇</p>
+
+<p><img src="/assets/images/Post2.jpg" alt="" /></p>
+
+<ul>
+  <li>Staff列表页</li>
+</ul>
+
+<p><img src="/assets/images/Staff.jpg" alt="" /></p>
+
+<ul>
+  <li>一个作者简介页</li>
+</ul>
+
+<p><img src="/assets/images/作者简介.jpg" alt="" /></p>
+
+<ul>
+  <li>一个About页面</li>
+</ul>
+
+<p><img src="/assets/images/About.jpg" alt="" /></p>
+<h2 id="三实验过程">三、实验过程</h2>
+<p>1、在WSL（通过Ubuntu）上安装Jekyll。</p>
+
+<p>2、在win10上安装VSCode以及在VSCode上面安装Remote插件，并通过插件连接WSL。</p>
+
+<p>3、在VSCode中创建一个文件夹，然后按照讲义“Jekyll官方文档”的“Step by Step Tutorial”中内容，完成第1-9步，实现创建个人的网站，并在上面发表一篇博客（把之前Markdown练习内容发布上去）。</p>
+
+<p>4、在WSL（通过Ubuntu）上安装nginx。</p>
+
+<p>5、将编译得到的_site目录部署到nginx上（即在nginx文件夹里复制_site文件夹并修改文件夹名字为html。</p>
+
+<p>6、将网站源代码（即_site文件夹里的文件和文件夹）push到Github.com网站。</p>
+
+<p>7、打开网站<a href="https://yaopeihong0826.github.io">https://yaopeihong0826.github.io</a> 检查是否完成实验，代码是否被正常编译。</p>
+
+<h2 id="四实验总结">四、实验总结</h2>
+<p>1、在Ubuntu上安装软件没有权限，因为没有在命令前加sudo；Sudo （substitute user [或 superuser] do），是一种程序，用于类Unix操作系统如BSD，Mac OS X，以及GNU/Linux以允许用户透过安全的方式使用特殊的权限运行程序。</p>
+
+<p>2、在安装完成nginx之后启动一直失败，在查阅很多资料之后了解到原因是没有在命令前加sudo。</p>
+
+<p>3、在Ubuntu中使用命令行将_site文件夹部署到nginx的过程一直失败，尝试直接在文件资源管理器中直接复制粘贴文件夹但是仍然失败因为没有权限但是尝试使用管理员身份进行仍然没有成功，最后在网上查阅很多资料之后发现在Ubuntu中进入root模式之后可以通过命令行语句完成_site文件夹的部署。</p>
+
+<p>4、在Markdown中编写此次实验报告上传截图的时候出现问题，在网上查阅资料可以通过安装插件如Markdown image或者Paste image等在剪切版有截图时可以直接通过快捷键粘贴图片到Markdown，但是仍然不成功（不成功的具体原因仍然未知），最后在课堂上询问老师通过在posts里新建文件夹存放图片，然后通过代码<img src="" alt="" />实现，但是这样的方式只能自己看到照片，而别人无法在公网地址看到照片（因为照片没有通过编译），通过把存放照片的文件夹移到到assets文件夹下就可以解决这个问题。</p>
+
+<p>5、实验心得体会：通过本次实验，我深切感受到Jekyll网站开发的神奇和方便，学到了真正的以后可以运用的知识，感受到了web的魅力，学会了如何编写博客以及Markdown的语法和操作，对网站开发有了初步认识，以后会更加认真听老师的讲解并且自主地了解更多的这方面的知识。</p>
+
+
+</body>
+
+</html>
